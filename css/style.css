@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* UTILITY */
+ul {
+    height: 60px;
+}
+
+.cl_l li, .cl_r li {
+    display: inline-block;
+    list-style: none;
+    line-height: 65px;
+    margin-right: 20px;
+}
+
+.cl_l a, .cl_r a {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+/* Button */
+.btn-download {
+    padding: 10px 12px;
+    border-radius: 20px;
+    color: white;
+    background-color: #EB008D;
+}
+.cl_r li .btn-download {
+    color: white;
+}
+
+/* Header */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+[class^="cl_"] {
+    margin-top: 10px;
+}
+
+.cl_l {
+    float: left;
+    width: 50%;
+}
+.cl_r {
+    float: right;
+    width: calc(100% - 50%);
+}
+
+/* Header menu-left */
+.menu-left {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.cl_l .logo {
+    height: 100%;
+    width: 200px;
+}
+
+.cl_l .personale a {
+    color: black;
+}
+
+/* Header menu-right */
+.menu-right {
+    display: flex;
+    text-transform: capitalize;
+}
+
+/* Sottomenù */
+.azienda {
+    position: relative;
+}
+.cl_r .menu-azienda {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cl_r .menu-azienda .sottomenu {
+    height: 100%;
+    width: 150px;
+     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cl_r .menu-azienda li {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Hover */
+a:hover {
+    color: black;
+}
